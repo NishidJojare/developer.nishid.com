@@ -1,0 +1,12 @@
+body {
+    background-color: blueviolet;
+}
+
+.about_project h3 {
+    color: black;
+    /* background-color: aquamarine; */
+}
+
+.nav {
+    margin-top: -20px;
+}

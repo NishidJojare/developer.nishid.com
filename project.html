@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            background-color: rgb(230, 226, 135);
+        }
+
+        .listitem1 {
+            color: white;
+            display: flex;
+            margin-right: 60px;
+            letter-spacing: 13px;
+            font-size: 18px;
+
+        }
+
+        .about {
+            margin-top: 80px;
+            margin-left: 100px;
+        }
+        .title{
+            font-size:35px;
+            font-weight: 530;
+            text-decoration: underline;
+        }
+        .duration{
+            font-size: 25px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        .discription{
+            font-size: 20px;
+        }
+
+        .text_image {
+            /* background-color: rgb(176, 176, 16); */
+            background-color: rgb(182, 182, 27);
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .text1 {
+            margin-top: 150px;
+            margin-left: 130px;
+            font-size: 40px;
+        }
+
+        .photo {
+            margin-top: 150px;
+            margin-left: 400px;
+            height: 133px;
+            width: 130px;
+            border: 3px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li class="listitem"><a href="index.html">HOME</a></li>
+                <li class="listitem"><a href="about.html">ABOUT</a></li>
+                <li class="listitem"><a href="project.html">PROJECTS</a></li>
+                <li class="listitem"><a href="#">ARTICLES</a></li>
+                <li class="listitem"><a href="login.html">JOIN US</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <div class="text_image">
+        <span class="photo">
+            <img src="nishu.png" alt="#">
+        </span>
+        <span class="text1">
+            <h3>Hello,&nbsp<br><span class="auto-input"></span></span></h3>
+        </span>
+
+    </div>
+
+    <!-- project heading navigation bar -->
+
+    <div class="nav">
+        <ul>
+            <li class="listitem1">MY PROJECTS</li>
+        </ul>
+    </div>
+
+    <!-- Project details -->
+    <div class="about">
+        <ul>
+            <li class="title">Electricity Bill Generator</li>
+        </ul>
+        <p class="duration">Mar 2022 - Apr 2022</p>
+        <p class="discription">The project is about the Electricity Bill Generator. The user is required to login or register on the
+            Electricity Dashboard to make consumer account. It is a mini project built in C++ which predicts the respective
+            month’s electricity bill based on the previous as well as current reading inputs given by the user and finally
+            prints the whole Bill format.<br><br><b>Used Skills: Dev C++ ,&nbsp;&nbsp;C++.</b>
+        </p>
+        
+    </div>
+
+<!-- Auto typing effect using typed js -->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed=new Typed(".auto-input",{
+            strings:["My name is Nishid Jojare","I am Web Developer","I am Passionate about CODING"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true
+        })
+    </script>
+</body>
+
+</html>
